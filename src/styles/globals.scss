@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./hero.scss";
+@import "./_header.scss";
+@import "./banner.scss";
+@import "./about.scss";
+@import "./company-history.scss";
+@import "./project.scss";
+@import "./project-advantages.scss";
+@import "./project-kinderkarten.scss";
+@import "./questions.scss";
+@import "./community-center.scss";
+
+
+
+// Import Swiper styles
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "swiper/css/free-mode";
+@import "swiper/css/thumbs";
+@import "swiper/css/effect-creative";
+
+// Import accordion styles
+@import 'react-accessible-accordion/dist/fancy-example.css';
+
+
+// import image carousel
+// requires a loader
+@import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+
+
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../public/font/SFProDisplay-Regular.ttf")format('opentype');;
+
+}
+*{
+  font-family: 'SF Pro Display', sans-serif;
+
+}
+ 
+body {
+  background-color: #00043C;
+}
+.max-w-7xl {
+  max-width: 80rem;
+}
+.max-w-8xl {
+  max-width: 90rem;
+}
+
+.max-w-9xl {
+  max-width: 110rem;
+}
+
+
+//hover effect underline
+	.link-underline {
+		border-bottom-width: 0;
+		background-image: linear-gradient(transparent, transparent), linear-gradient(#2154EC,#2154EC);
+		background-size: 0 2px;
+		background-position: 0 100% ;
+		background-repeat: no-repeat;
+		transition: background-size .2s ease-in-out;
+    padding-bottom: 5px;
+	}
+	.link-underline:hover {
+		background-size: 100% 2px;
+	}
+
+
+	//
+	.product-images-slider {
+    .swiper-slide {
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+        color: #000;
+    }
+
+    .swiper-button-next {
+        right: 0;
+        color: #000;
+    }
+}
+
+.product-images-slider-thumbs {
+    .swiper-slide {
+        cursor: pointer;
+        border: 1px solid #dddbdb;
+
+        &-thumb-active {
+            border-color: #ff0000;
+        }
+    }
+
+    &-wrapper {
+        width: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+.text-stroke{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  font-style: normal;
+   padding: 0px 5px;
+  -webkit-text-stroke: 1px #2154EC;
+  -webkit-text-fill-color: transparent;
+}
+
+//conic
+
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+	--d: 3500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	// --c1: rgba(168, 239, 255, 1);
+  --c1: rgba(33, 84, 236, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+
+
+.conic-box {
+@apply flex h-full justify-center lg:pr-[30px] lg:pt-[30px] pb-[30px] bg-[#ffffff14] isolate lg:mb-[80px] mb-[24px];
+	border: 0.20rem solid;
+  border-radius: 2px;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+

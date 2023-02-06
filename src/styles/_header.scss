@@ -1,0 +1,69 @@
+.header {
+  @apply z-50 left-0 right-0  top-0  max-w-8xl mx-auto ;
+}
+
+.header > div {
+  @apply mx-auto container p-4 grid lg:flex lg:justify-between grid-cols-2 items-center;
+}
+
+.nav {
+  @apply flex items-center mt-[30px];
+}
+
+
+.flex-action {
+  @apply hidden lg:block mr-8 ; 
+  
+}
+
+
+
+//menu
+.mobileBtn {
+  @apply lg:hidden justify-self-end inline-flex items-center justify-center rounded-md bg-[#ffffff14] p-2  focus:outline-none;
+}
+
+.menu {
+  @apply col-span-2 bg-[#00043C] text-white p-2 mt-4 rounded-lg shadow-lg  border border-[#ffff] z-50 ;
+}
+
+
+
+.mobileNav {
+  @apply w-full py-2;
+}
+
+.mobileNav > li {
+  @apply hover:bg-slate-400 focus:bg-slate-400 hover:text-white focus:text-white p-2 rounded;
+}
+
+
+//
+.dropdown {
+  position: relative;
+}
+
+.header-menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px solid grey;
+  width: 250px;
+  border-radius: 8px;
+
+}
+
+.header-menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}

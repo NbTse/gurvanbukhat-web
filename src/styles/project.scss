@@ -1,0 +1,15 @@
+.project-list{
+.project-card{
+@apply flex h-full justify-center lg:pr-[30px] lg:pt-[30px] pb-[30px] bg-[#ffffff14] rounded-[16px] isolate lg:mb-[80px] mb-[24px];
+    }
+}
+
+.project-choose{
+    .box-1{
+        @apply px-[20px] py-[20px] bg-transparent text-center ; 
+    }
+     .box-2{
+        @apply px-[20px] py-[20px] bg-[#ffffff14] text-center  lg:rounded-none rounded-[16px];
+    }
+}
+

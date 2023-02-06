@@ -1,0 +1,18 @@
+
+
+.carousel .thumb{
+width: 116px !important; 
+background-size: contain;
+border: none;
+@apply brightness-50;
+}
+
+
+
+  .carousel .thumb.selected, .carousel .thumb:hover {
+    border: none;
+    @apply brightness-100
+  }
+.carousel .control-arrow {
+      opacity: 100 !important;
+  }

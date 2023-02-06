@@ -1,0 +1,18 @@
+.accordion {
+  @apply text-white ;
+
+  .accordion-item {
+    @apply p-[20px] bg-[#ffffff14] mb-5 border border-[#6E7191] rounded-[8px];
+
+    .accordion-heading {
+  
+      .accordion-button {
+        @apply overflow-y-auto h-full flex justify-between items-center ;
+      }
+    }
+
+    .accordion-panel {
+      @apply mt-[14px] text-white mb-4;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.banner {
+  @apply  relative  w-full mt-[154px] lg:h-[288px] h-[150px] flex items-center justify-center;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: url("/images/banner/r-light.png");
+    background-size: contain;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -5;  
+  }
+
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: url("/images/banner/l-light.png");
+        background-size: contain;
+
+    left: 0;
+    top: 0; 
+    bottom: 0;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: -5;
+  }
+}
+
+
+.banner-shadow {
+  @apply  absolute top-[-288px] h-screen  w-full hidden lg:block;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: url("/images/banner/right.png");
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position:top -10% right;
+    z-index: -4;  
+  }
+
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: url("/images/banner/left.png");
+    left: 0;
+    top: 0; 
+    bottom: 0;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: top -10% left;
+    z-index: -4;
+  }
+}
+
