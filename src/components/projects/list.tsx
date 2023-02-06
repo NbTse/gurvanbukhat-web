@@ -3,7 +3,7 @@ import ProjectCard from "components/project-card";
 export default function ProjectList({}) {
   return (
     <>
-      <section className="px-5 mx-auto lg:py-24 py-[32px] lg:px-24 project-list">
+      <section className="px-5 mx-auto lg:py-0 py-[10px] lg:px-24 project-list">
         <ProjectCard
           id="1"
           name="Арга билиг цогцолбор хотхон"

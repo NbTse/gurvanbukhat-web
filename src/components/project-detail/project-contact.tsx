@@ -22,17 +22,19 @@ export default function ProjectContact({ project }: any) {
                   />
                 </CustomButton>
 
-                <CustomButton
-                  name={project && project[0].contact.number}
-                  type="contact"
-                >
-                  <Image
-                    src="/images/projects/icons/contact.svg"
-                    alt="contact"
-                    width={24}
-                    height={24}
-                  />
-                </CustomButton>
+                <a href={`tel://${project[0].contact.number}`}>
+                  <CustomButton
+                    name={project && project[0].contact.number}
+                    type="contact"
+                  >
+                    <Image
+                      src="/images/projects/icons/contact.svg"
+                      alt="contact"
+                      width={24}
+                      height={24}
+                    />
+                  </CustomButton>
+                </a>
               </div>
             </CustomShadowBox>
           </div>

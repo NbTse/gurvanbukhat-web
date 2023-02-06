@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Banner({ name }: any) {
   return (
-    <div className="relative mb-[40px]">
+    <div className="relative">
       <motion.div
         className="flex flex-col w-full text-center"
         initial="hidden"

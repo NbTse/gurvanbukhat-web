@@ -1,9 +1,10 @@
 import CustomCard from "components/common/custom-card";
+import Link from "next/link";
 
 export default function NewsList({}) {
   return (
     <>
-      <section className="px-5 py-24 mx-auto lg:px-24 news">
+      <section className="px-5 mx-auto lg:px-24 news">
         <div className="flex flex-col w-full my-10 text-center">
           <h2 className="mb-[30px] text-center text-white lg:text-[40px] text-[20px] font-bold">
             Мэдээ/Мэдээлэл
@@ -11,69 +12,33 @@ export default function NewsList({}) {
         </div>
         <div className="bg-[url('/images/news-card/bg.png')] bg-cover bg-center">
           <div className="gap-3 md:grid md:grid-cols-3 md:grid-rows-1">
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
-            <CustomCard
-              name="Bankman-Fried Would Like to Talk With Musk About Twitter"
-              imgSrc="/images/news-card/card.png"
-              imgWidth="350"
-              imgHeight="200"
-              type="news"
-            />
+            <Link href="/news/1">
+              <CustomCard
+                name="Bankman-Fried Would Like to Talk With Musk About Twitter"
+                imgSrc="/images/news-card/card.png"
+                imgWidth="350"
+                imgHeight="200"
+                type="news"
+              />
+            </Link>
+            <Link href="/news/1">
+              <CustomCard
+                name="Bankman-Fried Would Like to Talk With Musk About Twitter"
+                imgSrc="/images/news-card/card.png"
+                imgWidth="350"
+                imgHeight="200"
+                type="news"
+              />
+            </Link>
+            <Link href="/news/1">
+              <CustomCard
+                name="Bankman-Fried Would Like to Talk With Musk About Twitter"
+                imgSrc="/images/news-card/card.png"
+                imgWidth="350"
+                imgHeight="200"
+                type="news"
+              />
+            </Link>
           </div>
         </div>
       </section>

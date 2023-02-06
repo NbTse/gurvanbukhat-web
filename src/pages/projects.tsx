@@ -7,7 +7,7 @@ export default function Projects() {
       <Banner name="Төслүүд" />
       <div className="mx-auto max-w-8xl">
         <div className="relative">
-          <section className="px-5 mx-auto lg:py-24 lg:px-24 project-list">
+          <section className="px-5 py-5 mx-auto lg:px-10 project-list">
             <div className="flex justify-center ">
               <div className="hidden xl:inline-block">
                 <video

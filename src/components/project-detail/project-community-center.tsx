@@ -21,11 +21,11 @@ export default function ProjectCommunityCenter({ project }: any) {
             </div>
             <div className="w-full md:w-4/4 lg:w-2/3">
               <Swiper
-                cssMode={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
+                // cssMode={true}
+                // autoplay={{
+                //   delay: 2500,
+                //   disableOnInteraction: false,
+                // }}
                 centeredSlides={true}
                 grabCursor={true}
                 effect={"creative"}
@@ -46,6 +46,11 @@ export default function ProjectCommunityCenter({ project }: any) {
                             height={730}
                             width={420}
                           />
+                          {item.text && (
+                            <div className="mt-[20px] text-white text-xl">
+                              {item.text}
+                            </div>
+                          )}
                         </SwiperSlide>
                       );
                     }

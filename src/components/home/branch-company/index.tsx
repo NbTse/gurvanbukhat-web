@@ -16,11 +16,12 @@ export default function BranchCompany({}) {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h2 className="text-center text-white lg:text-[56px] text-[20px] font-bold">
+          {/* <h2 className="text-center text-white lg:text-[56px] text-[20px] font-bold"> */}
+          <h2 className="py-10 text-white lg:text-[40px]  text-[20px] font-bold text-center">
             САЛБАР КОМПАНИУД
           </h2>
         </motion.div>
-        <div className="gap-[30px] grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-1">
+        <div className="gap-[30px] grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-1 pb-10">
           <div className="flex items-center justify-center lg:p-[10px]">
             <Image
               src="/images/branch-company/1.png"

@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="robots" content="index, follow" />
-          {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
+          <link rel="shortcut icon" href="/company-main.png" />
         </Head>
         <body className="overflow-x-hidden">
           <Main />

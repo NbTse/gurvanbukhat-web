@@ -63,7 +63,7 @@ export default function Projects() {
           </div>
           <ProjectMobileHero project={project} />
 
-          <div className="bg-[url('/images/background2.png')] bg-contain  bg-repeat-y">
+          <div className="bg-[url('/images/background2.png')] bg-cover  bg-repeat-y">
             <div className="mx-auto max-w-8xl">
               <div className="relative">
                 <ProjectIntroduction project={project} />
@@ -83,9 +83,8 @@ export default function Projects() {
             </div>
           </div>
         </>
-      ) : (
-        <Custom404 />
-      )}
+      ) : // <Custom404 />
+      null}
     </>
   );
 }

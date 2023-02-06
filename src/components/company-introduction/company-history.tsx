@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CompanyHistory({}) {
   return (
     <>
-      <section className="px-5 py-24 mx-auto lg:px-24 company-history">
+      <section className="px-5 py-10 mx-auto lg:px-24 company-history">
         <h2 className="text-center text-white lg:text-[40px] text-[24px] mb-[48px] font-bold">
           КОМПАНИЙН ТҮҮХ
         </h2>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function GeneralDirector({}) {
   return (
     <>
-      <section className="px-5 pb-24 mx-auto lg:px-24 general-director">
+      <section className="px-5 mx-auto lg:px-24 general-director">
         <div className="flex flex-col rounded-lg md:flex-row">
           <div className="w-full md:w-2/3 lg:w-1/3 mb-[30px]">
             <Image

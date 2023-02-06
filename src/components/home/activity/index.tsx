@@ -23,7 +23,7 @@ export default function Activity({}) {
       <div className="hidden w-full md:block">
         <div className="grid grid-rows">
           <div className="relative mt-[-100px] flex items-center justify-start">
-            <img src="/images/activity/1.png" alt="" />
+            <img src="/images/activity/11.png" alt="" className="mb-[130px]" />
             <div className="">
               <h2 className="text-white text-[28px] font-bold">
                 Хөрөнгө оруулалт
@@ -98,11 +98,11 @@ export default function Activity({}) {
               </motion.div>
             </div>
 
-            <img src="/images/activity/4.png" alt="" />
+            <img src="/images/activity/12.png" alt="" className="mb-[130px]" />
           </div>
 
           <div className="relative mt-[-260px] flex items-center justify-start ">
-            <img src="/images/activity/4.png" alt="" />
+            <img src="/images/activity/13.png" alt="" className="mb-[130px]" />
             <div>
               <p className="text-white text-[28px] text-start font-bold">
                 Үйлдвэрлэл, үйлчилгээ
@@ -182,17 +182,17 @@ export default function Activity({}) {
               </motion.div>
             </div>
 
-            <img src="/images/activity/4.png" alt="" />
+            <img src="/images/activity/14.png" alt="" className="mb-[130px]" />
           </div>
         </div>
       </div>
       {/* mobile */}
       <div className="mobile md:hidden">
         <div className="flex mt-[-60px] items-center justify-start">
-          <div className="w-[100%]">
-            <img src="/images/activity/1.png" alt="" />
+          <div className="w-[50%]">
+            <img src="/images/activity/11.png" alt="" className="mb-[90px]" />
           </div>
-          <div>
+          <div className="w-[50%]">
             <h2 className="text-white lg:text-[28px] sm:text-[12px]">
               Хөрөнгө оруулалт
             </h2>
@@ -226,10 +226,10 @@ export default function Activity({}) {
           </div>
         </div>
         <div className="flex mt-[-100px] items-center justify-start ">
-          <div className="w-[100%]">
-            <img src="/images/activity/2.png" alt="" />
+          <div className="w-[50%]">
+            <img src="/images/activity/12.png" alt="" className="mb-[90px]" />
           </div>
-          <div>
+          <div className="w-[50%]">
             <h2 className="text-white lg:text-[28px] sm:text-[12px] ">
               Барилгын стратеги,менежмент
             </h2>
@@ -266,10 +266,10 @@ export default function Activity({}) {
           </div>
         </div>
         <div className="flex mt-[-100px] items-center justify-start ">
-          <div className="w-[100%]">
-            <img src="/images/activity/3.png" alt="" />
+          <div className="w-[50%]">
+            <img src="/images/activity/13.png" alt="" className="mb-[90px]" />
           </div>
-          <div>
+          <div className="w-[50%]">
             <h2 className="text-white lg:text-[28px] sm:text-[12px]">
               Үйлдвэрлэл, үйлчилгээ
             </h2>
@@ -309,10 +309,10 @@ export default function Activity({}) {
           </div>
         </div>
         <div className="flex mt-[-100px] items-center justify-start ">
-          <div className="w-[100%]">
-            <img src="/images/activity/4.png" alt="" />
+          <div className="w-[50%]">
+            <img src="/images/activity/14.png" alt="" className="mb-[90px]" />
           </div>
-          <div>
+          <div className="w-[50%]">
             <h2 className="text-white lg:text-[28px] sm:text-[12px]">
               Худалдаа
             </h2>

@@ -30,22 +30,18 @@ export default function Questions() {
 
       <div className="mx-auto max-w-8xl">
         <div className="relative">
-          <section className="px-5 py-24 mx-auto lg:px-24 questions">
+          <section className="px-5 py-10 mx-auto lg:px-10 questions">
             <Accordion className="accordion">
               {questionData &&
                 questionData.map((item, index) => (
                   <AccordionItem
                     key={index}
-                    className={
-                      active === index
-                        ? "bg-[#ffffff14] accordion-item"
-                        : "accordion-item"
-                    }
+                    className={`accordion-item ${
+                      active === index ? "bg-[#ffffff14] accordion-item" : ""
+                    }`}
+                    onClick={(e) => handleClick(e, index)}
                   >
-                    <AccordionItemHeading
-                      className="accordion-heading "
-                      onClick={(e) => handleClick(e, index)}
-                    >
+                    <AccordionItemHeading className="accordion-heading ">
                       <AccordionItemButton className="accordion-button">
                         <p className="text-white text-[16px]">{item.name} </p>
                         <div>

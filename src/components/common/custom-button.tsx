@@ -12,11 +12,11 @@ const CustomButton = ({ name, type = "normal", children }: any) => {
         }   
           ${
             type === "contact" &&
-            "text-white bg-[#2154EC]  flex  flex-row-reverse items-center lg:px-[32px] py-[10px] text-[12px] pr-[5px]"
+            "text-white bg-[#2154EC]  flex  flex-row-reverse items-center lg:px-[32px] py-[10px] text-[12px] px-[10px]"
           }   
         ${
           type === "transparent-contact" &&
-          "text-white bg-transparent border text-[12px] border-white flex  flex-row-reverse items-center lg:px-[32px] pr-[5px] py-[10px]"
+          "text-white bg-transparent border text-[12px] border-white flex  flex-row-reverse items-center lg:px-[32px] px-[10px] py-[10px]"
         }
            ${
              type === "subscribe" &&
@@ -28,8 +28,8 @@ const CustomButton = ({ name, type = "normal", children }: any) => {
       }
         `}
     >
-      {name}
-      <div className="ml-2 body">{children}</div>
+      <span className={children && `ml-2`}>{name}</span>
+      {children && <div className="sm:ml-2">{children}</div>}
     </button>
   );
 };

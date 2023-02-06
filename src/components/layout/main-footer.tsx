@@ -2,8 +2,13 @@
 import CustomButton from "components/common/custom-button";
 import CustomInput from "components/common/custom-input";
 import Logo from "components/common/logo";
-import Image from "next/image";
 import Link from "next/link";
+import {
+  TfiFacebook,
+  TfiInstagram,
+  TfiLinkedin,
+  TfiTwitterAlt,
+} from "react-icons/tfi";
 
 export default function Footer() {
   return (
@@ -97,55 +102,50 @@ export default function Footer() {
                 ХОЛБОО БАРИХ
               </h2>
             </Link>
-            <nav className="py-3 mb-10 space-y-2 list-none text-[14px] text-white  md:hover:text-blue-700">
-              <li>
-                <Link href="/questions" passHref>
-                  ТҮГЭЭМЭЛ АСУУЛТ ХАРИУЛТ
-                </Link>
-              </li>
-            </nav>
+            <Link href="/questions" passHref>
+              <h2 className="mb-3 text-lg tracking-widest text-white text-[14px]  md:hover:text-blue-700">
+                ТҮГЭЭМЭЛ АСУУЛТ ХАРИУЛТ
+              </h2>
+            </Link>
+            <Link href="/news" passHref>
+              <h2 className="mb-3 text-lg tracking-widest text-white text-[14px]  md:hover:text-blue-700">
+                СУДАЛГАА, МЭДЭЭЛЭЛ
+              </h2>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col justify-between pt-5 pb-4 bg-top border-t  border-[#6E7191] lg:flex-row sm:flex-row">
           <ul className="flex flex-col">
             <Logo />
           </ul>
-          <div className="flex gap-2">
-            <a href="#" target="_blank">
-              <Image
-                src="/images/footer/1.png"
-                width={48}
-                height={48}
-                alt=""
-                className="w-[48px] h-[48px]"
-              />
+          <div className="flex justify-center gap-4">
+            <a
+              href="#"
+              target="_blank"
+              className="inline-flex items-center justify-center w-[48px] h-[48px] border border-[#6E7191] rounded-full text-white hover:bg-[#2154EC] duration-300 hover:border-[#2154EC] leading-[48px]"
+            >
+              <TfiFacebook />
             </a>
-            <a href="#" target="_blank">
-              <Image
-                src="/images/footer/2.png"
-                width={48}
-                height={48}
-                alt=""
-                className="w-[48px] h-[48px]"
-              />
+            <a
+              href="#"
+              target="_blank"
+              className="inline-flex items-center justify-center w-[48px] h-[48px] border border-[#6E7191] rounded-full text-white hover:bg-[#2154EC] duration-300 hover:border-[#2154EC] leading-[48px]"
+            >
+              <TfiInstagram />
             </a>
-            <a href="#" target="_blank">
-              <Image
-                src="/images/footer/3.png"
-                width={48}
-                height={48}
-                alt=""
-                className="w-[48px] h-[48px]"
-              />
+            <a
+              href="#"
+              target="_blank"
+              className="inline-flex items-center justify-center w-[48px] h-[48px] border border-[#6E7191] rounded-full text-white hover:bg-[#2154EC] duration-300 hover:border-[#2154EC] leading-[48px]"
+            >
+              <TfiLinkedin />
             </a>
-            <a href="#" target="_blank">
-              <Image
-                src="/images/footer/4.png"
-                width={48}
-                height={48}
-                alt=""
-                className="w-[48px] h-[48px]"
-              />
+            <a
+              href="#"
+              target="_blank"
+              className="inline-flex items-center justify-center w-[48px] h-[48px] border border-[#6E7191] rounded-full text-white hover:bg-[#2154EC] duration-300 hover:border-[#2154EC] leading-[48px]"
+            >
+              <TfiTwitterAlt />
             </a>
           </div>
         </div>

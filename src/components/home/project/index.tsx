@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Project({}) {
   return (
@@ -10,7 +10,7 @@ export default function Project({}) {
           ТӨСЛҮҮД
         </h2>
 
-        <div className="px-5 py-24 mx-auto lg:px-24 project h-screen w-full rounded-lg bg-[url('/images/projects/bg.png')] bg-cover">
+        <div className="px-5 py-24 mx-auto lg:px-24 project h-screen w-full rounded-lg bg-[url('/images/projects/bg.png')] bg-cover relative">
           <motion.div
             className="flex flex-col w-full my-10 text-center"
             initial="hidden"
@@ -22,38 +22,52 @@ export default function Project({}) {
               visible: { opacity: 1, y: 0 },
             }}
           ></motion.div>
-          <div className="flex">
+          {/* <div className="absolute bottom-0 flex flex-col md:flex-row"> */}
+          <div className="absolute bottom-0 flex flex-row">
             <div>
-              <a href="">
+              <Link href="/project-detail/?projectId=1">
                 <img
                   src="/images/projects/proj/AB.png"
                   alt="AB"
-                  className="w-full"
+                  className="duration-300 hover:scale-110"
                 />
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="">
-                <img src="/images/projects/proj/Florence.png" alt="Florence" />
-              </a>
+              <Link href="/project-detail/?projectId=2">
+                <img
+                  src="/images/projects/proj/Florence.png"
+                  alt="Florence"
+                  className="duration-300 hover:scale-110"
+                />
+              </Link>
             </div>
             <div>
-              <a href="">
-                <img src="/images/projects/proj/LUX.png" alt="LUX" />
-              </a>
+              <Link href="/project-detail/?projectId=3">
+                <img
+                  src="/images/projects/proj/LUX.png"
+                  alt="LUX"
+                  className="duration-300 hover:scale-110"
+                />
+              </Link>
             </div>
             <div>
-              <a href="">
+              <Link href="/project-detail/?projectId=5">
                 <img
                   src="/images/projects/proj/Plus apart.png"
                   alt="Plus apart"
+                  className="duration-300 hover:scale-110"
                 />
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="">
-                <img src="/images/projects/proj/PLUS RES.png" alt="PLUS RES" />
-              </a>
+              <Link href="/project-detail/?projectId=6">
+                <img
+                  src="/images/projects/proj/PLUS RES.png"
+                  alt="PLUS RES"
+                  className="duration-300 hover:scale-110"
+                />
+              </Link>
             </div>
           </div>
         </div>

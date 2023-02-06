@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Introduction({}) {
   return (
     <>
-      <section className="px-5 mx-auto lg:py-24 lg:px-24 company-introduction">
+      <section className="px-5 mx-auto lg:py-10 lg:px-24 company-introduction">
         <div className="gap-3 md:grid md:grid-cols-2 md:grid-rows-1">
           <div className="w-full">
             <Image

@@ -13,8 +13,8 @@ export default function ProjectMobileHero({ project, children }: any) {
             <p className="mt-8 mb-12 lg:text-[56px] text-[20px] text-white font-bold">
               {project && project[0].hero.title}
             </p>
-            <div className="flex mx-10 ">
-              <div className="mr-10">
+            <div className="flex gap-4">
+              <div className="">
                 <CustomButton name="Холбоо барих" type="transparent-contact">
                   <Image
                     src="/images/projects/icons/message.svg"

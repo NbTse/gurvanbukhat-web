@@ -1,3 +1,9 @@
+import dynamic from "next/dynamic";
+
+const MapWithNoSSR = dynamic(() => import("components/common/location"), {
+  ssr: false,
+});
+
 export default function ProjectLocation() {
   return (
     <>
@@ -6,8 +12,7 @@ export default function ProjectLocation() {
           <p className="mb-6 lg:text-[40px] text-[20px] font-bold text-center ">
             ТӨСЛИЙН БАЙРШИЛ
           </p>
-          {/* <Location /> */}
-          ...
+          <MapWithNoSSR />
         </div>
       </section>
     </>

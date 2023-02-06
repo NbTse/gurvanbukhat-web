@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 export default function Step({}) {
   return (
     <>
-      <section className="px-5 pt-24 mx-auto lg:px-24 company-introduction-step">
-        <div className="gap-[30px] md:grid md:grid-cols-3 md:grid-rows-1 lg:mb-[200px]  mb-[180px]">
+      <section className="px-5 mx-auto lg:px-24 company-introduction-step">
+        <div className="gap-[30px] md:grid md:grid-cols-3 md:grid-rows-1 mb-[20px]">
           <motion.div
             initial="hidden"
             whileInView="visible"

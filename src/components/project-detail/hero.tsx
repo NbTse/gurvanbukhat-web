@@ -38,17 +38,19 @@ export default function ProjectDetailHero({ project, children }: any) {
                 </div>
 
                 <div>
-                  <CustomButton
-                    name={project && project[0].hero.contact}
-                    type="contact"
-                  >
-                    <Image
-                      src="/images/projects/icons/contact.svg"
-                      alt="contact"
-                      width={24}
-                      height={24}
-                    />
-                  </CustomButton>
+                  <a href={`tel://${project[0].hero.contact}`}>
+                    <CustomButton
+                      name={project && project[0].hero.contact}
+                      type="contact"
+                    >
+                      <Image
+                        src="/images/projects/icons/contact.svg"
+                        alt="contact"
+                        width={24}
+                        height={24}
+                      />
+                    </CustomButton>
+                  </a>
                 </div>
               </div>
               <div>{children}</div>

@@ -8,7 +8,7 @@ export default function ProjectRoom({ project }: any) {
     <>
       {project[0]?.room && (
         <section className="px-5 py-24 mx-auto lg:px-24 project-room">
-          <h2 className="text-center text-white lg:text-[40px] text-[20px] font-bold">
+          <h2 className="text-center text-white lg:text-[40px] text-[20px] font-bold mb-[20px]">
             ӨРӨӨНИЙ ЗОХИОН БАЙГУУЛАЛТ
           </h2>
 

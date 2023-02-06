@@ -3,8 +3,8 @@ import CustomCard from "components/common/custom-card";
 export default function ManagmentTeam({}) {
   return (
     <>
-      <section className="px-5 pt-24 mx-auto lg:px-24 managment-team">
-        <h2 className="text-white lg:text-[40px]  text-[20px] font-bold text-center mb-[40px]">
+      <section className="px-5 mx-auto lg:px-24 managment-team">
+        <h2 className="py-10 text-white lg:text-[40px]  text-[20px] font-bold text-center">
           УДИРДЛАГЫН БАГ
         </h2>
         <div className="gap-[30px] grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-1">

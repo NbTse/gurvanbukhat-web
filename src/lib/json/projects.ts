@@ -103,15 +103,42 @@ export const argabileg = [
       desc: "Үл хөдлөх хөрөнгийн зах зээл улс орны эдийн засагт даацтай хувь нэмэр оруулахын зэрэгцээ иргэдийн амьдралын амин цөм хэрэгцээг хангадаг онцлогтой. Бид бүгд амьдран суугаа орон сууцаа улам бүр сайжруулж, гэр бүл, үр хүүхдэдээ илүү ая тухтай орчин бүрдүүлэхийг эрмэлзсээр ирсэн. Иймээс бизнес зэрэглэлийн “Арга Билиг” цогцолбор хотхоноо бид оршин суугчдын харилцаа холбоо, хамтдаа хөгжих боломжийг бүрдүүлсэн Community Center буюу Ая тухын бүстэйгээр шийдсэн юм. “Арга Билиг” бизнес зэрэглэлийн цогцолбор хотхоны Зөвхөн оршин суугчдад зориулсан Community center:",
 
       images: [
-        { imgSrc: "/images/projects/hothon/argabileg/community/1.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/2.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/3.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/4.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/5.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/6.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/7.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/8.png" },
-        { imgSrc: "/images/projects/hothon/argabileg/community/9.png" },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/1.png",
+          text: "0-5 настай хүүхдэд зориулсан тоглоомын талбай",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/2.png",
+          text: "0-5 настай хүүхдэд зориулсан тоглоомын талбай",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/3.png",
+          text: "Кофе шоп",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/4.png",
+          text: "Номын сан",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/5.png",
+          text: "Зочид хүлээх болон тухтай уулзах хэсэг",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/6.png",
+          text: "Террас дээрх мини-хөлбөмбөгийн талбай",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/7.png",
+          text: "Террас дээрх мини-хөлбөмбөгийн талбай",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/8.png",
+          text: "Ариун цэврийн өрөө",
+        },
+        {
+          imgSrc: "/images/projects/hothon/argabileg/community/9.png",
+          text: "Ширээний теннис, дартс гэх зэрэг тохижилттой амрах хэсэг",
+        },
       ],
     },
     equipment: {

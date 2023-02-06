@@ -9,7 +9,7 @@ export default function About() {
       <Banner name="Ерөнхий захирлын мэндчилгээ" />
 
       <div className="mx-auto max-w-8xl">
-        <div className="relative">
+        <div className="relative py-10">
           <GeneralDirector />
         </div>
       </div>
